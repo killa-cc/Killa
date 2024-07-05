@@ -1,0 +1,40 @@
+getgenv().Killa = {
+    ['Keybind'] = {
+        Aimbot = Enum.KeyCode.E,
+    },
+    ['Aimbot'] = {
+        Prediction = 0.11,
+
+        ['Shake'] = {
+            Enabled = false,
+            Amount = 87
+        },
+        ['Smoothness'] = {
+            Amount = 0.063,
+            Style = "Sine",
+            Direction = "InOut"
+        },
+        ['FieldOfView'] = {
+            Enabled = false,
+            Size = 360,
+            Color = Color3.fromRGB(255, 255, 255),
+            Transparency = 1,
+            Filled = false
+        }
+    },
+    ['HitBox'] = {
+        Part = "HumanoidRootPart",
+
+        ['Air'] = {
+            Enabled = false,
+            AirPart = "HumanoidRootPart"
+        }
+    },
+    ['Checks'] = {
+        KnockedChecks = true,
+        TargetDeath = true,
+        PlayerDeath = true
+    }
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177f15ec924de4c5c34f91fc29ccdf18.lua"))()
